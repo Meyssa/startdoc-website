@@ -2,6 +2,7 @@ import { Calendar, MapPin, Users, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import heroBg from "@/assets/hero-bg.jpg";
+import startdocLogo from "@/assets/startdoc-logo.png";
 
 const HeroSection = () => {
   return (
@@ -19,23 +20,28 @@ const HeroSection = () => {
       {/* Content */}
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <Card className="backdrop-blur-sm bg-background/95 shadow-card-hover border-0">
+          <Card className="backdrop-blur-sm bg-background/98 shadow-elegant border border-border/20">
             <CardContent className="p-8 md:p-12">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Left Column */}
                 <div className="space-y-6">
-                  <div className="space-y-4">
-                    <div className="inline-flex items-center space-x-2 bg-accent/10 px-4 py-2 rounded-full">
-                      <Calendar className="w-4 h-4 text-accent" />
-                      <span className="text-sm font-medium text-accent">Start'Doc 2025</span>
+                  <div className="space-y-6">
+                    <div className="flex items-center space-x-4 mb-6">
+                      <div className="w-16 h-16 bg-gradient-accent rounded-2xl flex items-center justify-center shadow-elegant">
+                        <img src={startdocLogo} alt="Start'Doc Logo" className="w-10 h-10" />
+                      </div>
+                      <div className="inline-flex items-center space-x-2 bg-accent/10 px-4 py-2 rounded-full">
+                        <Calendar className="w-4 h-4 text-accent" />
+                        <span className="text-sm font-semibold text-accent">Start'Doc 2025</span>
+                      </div>
                     </div>
                     
                     <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                       Join our{" "}
-                      <span className="text-primary">Winter Research Day</span>
+                      <span className="bg-gradient-accent bg-clip-text text-transparent">Winter Research Day</span>
                     </h1>
                     
-                    <p className="text-lg text-muted-foreground leading-relaxed">
+                    <p className="text-xl text-muted-foreground leading-relaxed">
                       Take the first step in your PhD journey and connect with Algeria's research community
                     </p>
                   </div>
@@ -87,11 +93,11 @@ const HeroSection = () => {
                     </p>
                   </div>
 
-                  <div className="bg-gradient-card rounded-lg p-6 border border-border/50">
-                    <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
+                  <div className="bg-gradient-secondary rounded-xl p-6 border border-primary/20 shadow-card">
+                    <h3 className="font-heading text-xl font-semibold text-primary-foreground mb-3">
                       You're Not Alone
                     </h3>
-                    <p className="text-muted-foreground">
+                    <p className="text-primary-foreground/80 leading-relaxed">
                       Whether you're feeling lost, unsure where to begin, or simply looking to connect with fellow researchers — Start'Doc is here to help you take your first confident steps into academic research.
                     </p>
                   </div>

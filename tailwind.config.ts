@@ -71,12 +71,14 @@ export default {
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-card': 'var(--gradient-card)',
-				'gradient-accent': 'var(--gradient-accent)'
+				'gradient-accent': 'var(--gradient-accent)',
+				'gradient-secondary': 'var(--gradient-secondary)'
 			},
 			boxShadow: {
 				'card': 'var(--shadow-card)',
 				'card-hover': 'var(--shadow-card-hover)',
-				'button': 'var(--shadow-button)'
+				'button': 'var(--shadow-button)',
+				'elegant': 'var(--shadow-elegant)'
 			},
 			transitionTimingFunction: {
 				'smooth': 'var(--transition-smooth)',
