@@ -18,15 +18,15 @@ const Navigation = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-4">
-            <div className="w-12 h-12 bg-gradient-accent rounded-2xl flex items-center justify-center shadow-button">
-              <img src="/src/assets/startdoc-logo.png" alt="Start'Doc Logo" className="w-8 h-8" />
+          <div className="flex items-center space-x-3">
+            <div className="w-10 h-10 bg-gradient-accent rounded-lg flex items-center justify-center">
+              <TreePine className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="font-heading text-2xl font-bold text-foreground">
+              <h1 className="font-heading text-xl font-semibold text-foreground">
                 Start'Doc
               </h1>
-              <p className="text-sm text-muted-foreground font-medium">École d'Hiver pour la Recherche</p>
+              <p className="text-sm text-muted-foreground">École d'Hiver pour la Recherche</p>
             </div>
           </div>
 
