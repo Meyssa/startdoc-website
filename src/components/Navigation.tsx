@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, BookOpen, Network } from "lucide-react";
+import { Menu, X, TreePine } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -19,13 +19,8 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="relative w-12 h-12">
-              <div className="w-12 h-12 bg-gradient-accent rounded-xl flex items-center justify-center shadow-lg border border-white/20">
-                <div className="relative">
-                  <BookOpen className="w-6 h-6 text-white" />
-                  <Network className="w-3 h-3 text-white/70 absolute -top-0.5 -right-0.5" />
-                </div>
-              </div>
+            <div className="w-11 h-11 bg-primary rounded-xl flex items-center justify-center shadow-sm">
+              <TreePine className="w-6 h-6 text-white" />
             </div>
             <div>
               <h1 className="font-heading text-xl font-bold text-foreground tracking-tight">
