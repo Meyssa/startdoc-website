@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Code2, GraduationCap } from "lucide-react";
+import { Menu, X, Code2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -19,9 +19,8 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="relative w-11 h-11 bg-gradient-accent rounded-xl flex items-center justify-center shadow-lg">
-              <Code2 className="w-5 h-5 text-white" />
-              <GraduationCap className="w-4 h-4 text-white/90 absolute -top-0.5 -right-0.5" />
+            <div className="w-11 h-11 bg-gradient-accent rounded-xl flex items-center justify-center shadow-lg">
+              <Code2 className="w-6 h-6 text-white" />
             </div>
             <div>
               <h1 className="font-heading text-xl font-bold text-foreground tracking-tight">
