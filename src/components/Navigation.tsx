@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, TreePine } from "lucide-react";
+import { Menu, X, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -19,8 +19,8 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-accent rounded-lg flex items-center justify-center">
-              <TreePine className="w-6 h-6 text-white" />
+            <div className="w-10 h-10 bg-gradient-accent rounded-xl flex items-center justify-center shadow-lg">
+              <GraduationCap className="w-6 h-6 text-white" />
             </div>
             <div>
               <h1 className="font-heading text-xl font-semibold text-foreground">
