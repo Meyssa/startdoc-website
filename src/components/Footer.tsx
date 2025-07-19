@@ -1,4 +1,4 @@
-import { Code2, Mail, MapPin, Calendar, ExternalLink } from "lucide-react";
+import { Code2, GraduationCap, Mail, MapPin, Calendar, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
@@ -22,8 +22,9 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-accent rounded-xl flex items-center justify-center shadow-sm">
-                <Code2 className="w-6 h-6 text-white" />
+              <div className="relative w-10 h-10 bg-gradient-accent rounded-xl flex items-center justify-center shadow-sm">
+                <Code2 className="w-5 h-5 text-white" />
+                <GraduationCap className="w-3 h-3 text-white/90 absolute -top-0.5 -right-0.5" />
               </div>
               <div>
                 <h3 className="font-heading text-lg font-bold">Start'Doc</h3>
