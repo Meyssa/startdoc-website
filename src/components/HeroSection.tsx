@@ -61,7 +61,7 @@ const HeroSection = () => {
                     <Button
                       size="lg"
                       disabled
-                      className="bg-muted text-muted-foreground shadow-button font-semibold px-8 py-4 h-auto cursor-not-allowed"
+                      className="bg-gray-300 text-gray-500 shadow-none font-semibold px-8 py-4 h-auto cursor-not-allowed opacity-60 border border-gray-300"
                     >
                       <span>Registration Coming Soon</span>
                     </Button>
@@ -79,11 +79,8 @@ const HeroSection = () => {
                     </p>
                   </div>
 
-                  <div className="bg-gradient-card rounded-lg p-6 border border-border/50">
-                    <h3 className="font-heading text-xl font-semibold text-foreground mb-3">
-                      You're Not Alone
-                    </h3>
-                    <p className="text-muted-foreground">
+                  <div>
+                    <p className="text-muted-foreground leading-relaxed">
                       Whether you're feeling lost, unsure where to begin, or simply looking to connect with fellow researchers — Start'Doc is here to help you take your first confident steps into academic research.
                     </p>
                   </div>
