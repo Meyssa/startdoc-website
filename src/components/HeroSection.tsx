@@ -48,11 +48,11 @@ const HeroSection = () => {
                     </div>
                     <div className="flex items-center space-x-3 text-muted-foreground">
                       <MapPin className="w-5 h-5 text-primary" />
-                      <span className="font-medium">LOCATION: Online + In Person (TBD)</span>
+                      <span className="font-medium">LOCATION: Online + In Person</span>
                     </div>
                     <div className="flex items-center space-x-3 text-muted-foreground">
                       <Users className="w-5 h-5 text-primary" />
-                      <span className="font-medium">PhD Students & Researchers</span>
+                      <span className="font-medium">Students & Researchers</span>
                     </div>
                   </div>
 
