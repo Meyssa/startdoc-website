@@ -60,18 +60,10 @@ const HeroSection = () => {
                   <div className="pt-4">
                     <Button
                       size="lg"
-                      className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-button font-semibold px-8 py-4 h-auto"
-                      asChild
+                      disabled
+                      className="bg-muted text-muted-foreground shadow-button font-semibold px-8 py-4 h-auto cursor-not-allowed"
                     >
-                      <a 
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSe1Gh8o9la9uLzglLrPPKePHHj4xaNJKrTZLFwIIMRqurzCDQ/viewform"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center space-x-2"
-                      >
-                        <span>Register Here</span>
-                        <ExternalLink className="w-5 h-5" />
-                      </a>
+                      <span>Registration Coming Soon</span>
                     </Button>
                   </div>
                 </div>
