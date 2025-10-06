@@ -7,7 +7,7 @@ const Footer = () => {
     { href: "#programme", label: "Programme" },
     { href: "#speakers", label: "Featured Speakers" },
     { href: "#about", label: "About" },
-    { href: "#acknowledgments", label: "Acknowledgments" },
+    { href: "/cmt-acknowledgment.html", label: "CMT Acknowledgment" },
   ];
 
   const contactInfo = [
