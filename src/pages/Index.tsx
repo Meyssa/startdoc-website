@@ -4,6 +4,7 @@ import CallForPosters from "@/components/CallForPosters";
 import FeaturedSpeakers from "@/components/FeaturedSpeakers";
 import ProgrammeSection from "@/components/ProgrammeSection";
 import SpeakersSection from "@/components/SpeakersSection";
+import Acknowledgments from "@/components/Acknowledgments";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -15,6 +16,7 @@ const Index = () => {
       <FeaturedSpeakers />
       {/* <ProgrammeSection /> */}
       {/* <SpeakersSection /> */}
+      <Acknowledgments />
       <Footer />
     </div>
   );

@@ -11,6 +11,7 @@ const Navigation = () => {
     { href: "#programme", label: "Programme" },
     { href: "#speakers", label: "Featured Speakers" },
     { href: "#about", label: "About" },
+    { href: "#acknowledgments", label: "Acknowledgments" },
   ];
 
   return (
