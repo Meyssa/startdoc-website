@@ -1,6 +1,7 @@
-import { FileText, Users, Globe, CheckCircle2 } from "lucide-react";
+import { FileText, Users, Globe, CheckCircle2, ExternalLink } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
 const CallForPosters = () => {
   const guidelines = [
@@ -98,6 +99,35 @@ const CallForPosters = () => {
               </div>
             </CardContent>
           </Card>
+
+          {/* Submission CTA */}
+          <div className="mt-12 text-center">
+            <Card className="bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20">
+              <CardContent className="p-8">
+                <h3 className="font-heading text-2xl font-semibold text-foreground mb-4">
+                  Ready to Submit Your Poster?
+                </h3>
+                <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+                  Submit your poster through our official submission system. The peer-review process will be managed using Microsoft CMT.
+                </p>
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-4 h-auto"
+                  asChild
+                >
+                  <a 
+                    href="https://cmt3.research.microsoft.com/StartDoc2025"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2"
+                  >
+                    <span>Submit Your Poster</span>
+                    <ExternalLink className="w-5 h-5" />
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </section>
