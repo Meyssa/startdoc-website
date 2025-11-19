@@ -48,7 +48,7 @@ const HeroSection = () => {
                     </div>
                     <div className="flex items-center space-x-3 text-muted-foreground">
                       <MapPin className="w-5 h-5 text-primary" />
-                      <span className="font-medium">LOCATION: In person (ESI Algiers, Algeria)</span>
+                      <span className="font-medium">LOCATION: Online + In person (ESI Algiers, Algeria)</span>
                     </div>
                     <div className="flex items-center space-x-3 text-muted-foreground">
                       <Users className="w-5 h-5 text-primary" />
