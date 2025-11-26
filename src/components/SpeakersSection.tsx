@@ -1,40 +1,44 @@
 import { LinkedinIcon, GraduationCap, Award, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import juliaImage from "@/assets/speakers/DSC00536.JPG";
+import mohammedImage from "@/assets/speakers/mohammed.jpeg";
+import meyssaImage from "@/assets/speakers/image0.jpg";
+import hadjerImage from "@/assets/speakers/HB.jpg";
 
 const SpeakersSection = () => {
   const speakers = [
     {
-      name: "Dr. Amina Benali",
-      title: "Professor of Computer Science",
-      institution: "USTHB, Algiers",
-      expertise: ["Machine Learning", "AI Ethics", "Natural Language Processing"],
-      bio: "Leading researcher in AI with 15+ years of experience. Published extensively in top-tier conferences and journals.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616c57b3c97?w=400&h=400&fit=crop&crop=face"
+      name: "Hadjer Benmeziane",
+      title: "Research Scientist",
+      institution: "IBM Research, Zürich Lab",
+      expertise: ["AutoML", "Analog-in-Memory Computing", "Efficient Deep Learning", "Machine Learning"],
+      bio: "Hadjer Benmeziane is a computer scientist specializing in machine learning, with a PhD focused on AutoML. She works as a research scientist at IBM Research (Zürich lab), where her research centers on analog-in-memory computing and efficient deep-learning methods. She is also the founder of School of AI Algiers, an initiative to share AI knowledge and support projects in Algeria.",
+      image: hadjerImage
     },
     {
-      name: "Prof. Mohamed Cherif",
-      title: "Director of Research",
-      institution: "CERIST, Algiers",
-      expertise: ["Cybersecurity", "Distributed Systems", "Blockchain"],
-      bio: "Internationally recognized expert in cybersecurity with numerous patents and publications in secure systems.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face"
-    },
-    {
-      name: "Dr. Yasmine Kaddour",
+      name: "Julia Kreutzer",
       title: "Senior Research Scientist",
-      institution: "CRTSE, Algiers",
-      expertise: ["Robotics", "Computer Vision", "Embedded Systems"],
-      bio: "Pioneer in robotics research with expertise in autonomous systems and industrial applications.",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face"
+      institution: "Cohere Labs",
+      expertise: ["Multilingual LLMs", "Evaluation Standards", "Machine Translation"],
+      bio: "Julia Kreutzer is a Senior Research Scientist at Cohere Labs. She's conducting research on making LLMs more multilingual and globally accessible, and on improving evaluation standards. She received her PhD from the University of Heidelberg and previously worked at Google Translate.",
+      image: juliaImage
     },
     {
-      name: "Dr. Karim Belaid",
-      title: "Associate Professor",
-      institution: "ENSIAS, Rabat",
-      expertise: ["Algorithms", "Optimization", "Operations Research"],
-      bio: "Expert in algorithmic optimization with significant contributions to combinatorial optimization problems.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+      name: "Meyssa Zouambi",
+      title: "AI Engineer",
+      institution: "Expleo Group, France",
+      expertise: ["Neural Architecture Search", "Optimization", "Large Language Models"],
+      bio: "Meyssa Zouambi completed her PhD in Computer Science at the University of Lille, with a thesis centered on neural architecture search and optimization. She is currently an AI Engineer specializing in large language models.",
+      image: meyssaImage
+    },
+    {
+      name: "Mohammed Belgoumri",
+      title: "PhD Student",
+      institution: "Deakin University, MLDS Research Group",
+      expertise: ["Theoretical AI", "Neural Loss Landscapes", "Robust Machine Learning"],
+      bio: "Mohammed Belgoumri is PhD student at Deakin University's MLDS research group. His thesis focuses on theoretical AI, particularly, the study of the geometry of neural loss landscapes and its applications to robust ML.",
+      image: mohammedImage
     }
   ];
 
@@ -100,7 +104,11 @@ const SpeakersSection = () => {
                       <img 
                         src={speaker.image} 
                         alt={speaker.name}
-                        className="w-full h-full object-cover"
+                        className={`w-full h-full object-cover ${
+                          speaker.name === "Meyssa Zouambi" 
+                            ? "scale-150 object-[center_50%]" 
+                            : ""
+                        }`}
                       />
                     </div>
                     
@@ -147,7 +155,7 @@ const SpeakersSection = () => {
                 They'll share practical insights, methodologies, and career guidance to help you succeed in your PhD journey.
               </p>
               <div className="text-sm text-muted-foreground">
-                More speakers will be announced soon. Stay tuned for updates!
+                {/* More speakers will be announced soon. Stay tuned for updates! */}
               </div>
             </CardContent>
           </Card>
