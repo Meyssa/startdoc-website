@@ -32,7 +32,7 @@ const HeroSection = () => {
                     
                     <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                       Join our{" "}
-                      <span className="text-primary">Winter Research Day</span>
+                      <span className="text-primary">Winter Research School</span>
                     </h1>
                     
                     <p className="text-lg text-muted-foreground leading-relaxed">
@@ -60,10 +60,18 @@ const HeroSection = () => {
                   <div className="pt-4">
                     <Button
                       size="lg"
-                      disabled
-                      className="bg-gray-300 text-gray-500 shadow-none font-semibold px-8 py-4 h-auto cursor-not-allowed opacity-60 border border-gray-300"
+                      className="px-8 py-4 h-auto font-semibold"
+                      asChild
                     >
-                      <span>Registration Coming Soon</span>
+                      <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSd_akQMApMs3-bwt4rX1q-18zMt44QWLISm7R20AczahAaVuQ/viewform?usp=sharing&ouid=100324790324019918443"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center"
+                      >
+                        <span>Register for Winter Research School</span>
+                        <ExternalLink className="w-4 h-4 ml-2" />
+                      </a>
                     </Button>
                   </div>
                 </div>

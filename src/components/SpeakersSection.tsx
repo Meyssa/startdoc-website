@@ -5,9 +5,24 @@ import juliaImage from "@/assets/speakers/DSC00536.JPG";
 import mohammedImage from "@/assets/speakers/mohammed.jpeg";
 import meyssaImage from "@/assets/speakers/image0.jpg";
 import hadjerImage from "@/assets/speakers/HB.jpg";
+import amroucheImage from "@/assets/speakers/Profile_Amrouche.jpg";
+import berrimiImage from "@/assets/speakers/image (2).png";
 
 const SpeakersSection = () => {
   const speakers = [
+    {
+      name: "Mohamed Amrouche",
+      title: "Keynote Speaker, Senior Geophysicist & Geoscience Team Leader",
+      institution: "SLB (ex. Schlumberger)",
+      expertise: [
+        "Geophysics",
+        "Engineering Seismology",
+        "Subsurface Reservoir Modeling",
+        "Energy Industry"
+      ],
+      bio: "Dr. Mohamed Amrouche is a senior geophysicist and geoscience team leader at the energy services company SLB (ex. Schlumberger), with a blended experience between academia and industry. He completed a Master and PhD in Geophysics at the Tokyo Institute of Technology (Japan), focusing on engineering seismology and geophysics, where he also worked as a research assistant within the Center of Urban Earthquake Engineering (CUEE). After working as a geophysicist for Schlumberger in Japan on subsurface reservoir modeling for major energy companies, he transferred to Algeria in 2022, where he now leads a team of geoscientists supporting Algerian and North African oil companies. In parallel with his industry role, Dr. Amrouche is heavily involved in scientific research and has published numerous academic papers, conference proceedings, and book chapters in collaboration with leading research institutions and universities.",
+      image: amroucheImage
+    },
     {
       name: "Hadjer Benmeziane",
       title: "Research Scientist",
@@ -39,24 +54,14 @@ const SpeakersSection = () => {
       expertise: ["Theoretical AI", "Neural Loss Landscapes", "Robust Machine Learning"],
       bio: "Mohammed Belgoumri is PhD student at Deakin University's MLDS research group. His thesis focuses on theoretical AI, particularly, the study of the geometry of neural loss landscapes and its applications to robust ML.",
       image: mohammedImage
-    }
-  ];
-
-  const stats = [
-    {
-      icon: Users,
-      value: "4+",
-      label: "Expert Speakers"
     },
     {
-      icon: GraduationCap,
-      value: "50+",
-      label: "Years Combined Experience"
-    },
-    {
-      icon: Award,
-      value: "100+",
-      label: "Publications"
+      name: "BERRIMI Mohamed",
+      title: "Head of AI",
+      institution: "Fyler",
+      expertise: ["Artificial Intelligence", "Machine Learning", "Google Cloud", "MLOps"],
+      bio: "Mohamed Berrimi holds two PhD degrees in Computer Science and Artificial Intelligence and is a Google Developer Expert (GDE) in AI/ML and Google Cloud. He is currently Head of AI at Fyler, where he focuses on building and deploying AI-driven products and solutions.",
+      image: berrimiImage
     }
   ];
 
@@ -70,27 +75,8 @@ const SpeakersSection = () => {
               Featured Speakers
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Learn from leading researchers and academics who will share their expertise and insights to guide your research journey
+              Learn from leading researchers and experts who will share their insights to guide you in your research journey
             </p>
-          </div>
-
-          {/* Stats */}
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
-            {stats.map((stat, index) => (
-              <Card key={index} className="text-center shadow-card hover:shadow-card-hover transition-shadow duration-300">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <stat.icon className="w-6 h-6 text-primary" />
-                  </div>
-                  <div className="font-heading text-3xl font-bold text-foreground mb-2">
-                    {stat.value}
-                  </div>
-                  <div className="text-muted-foreground">
-                    {stat.label}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
           </div>
 
           {/* Speakers Grid */}

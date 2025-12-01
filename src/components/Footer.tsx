@@ -84,7 +84,7 @@ const Footer = () => {
               asChild
             >
               <a 
-                href="https://docs.google.com/forms/d/e/1FAIpQLSe1Gh8o9la9uLzglLrPPKePHHj4xaNJKrTZLFwIIMRqurzCDQ/viewform"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd_akQMApMs3-bwt4rX1q-18zMt44QWLISm7R20AczahAaVuQ/viewform?usp=sharing&ouid=100324790324019918443"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2"

@@ -1,8 +1,7 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import CallForPosters from "@/components/CallForPosters";
-import FeaturedSpeakers from "@/components/FeaturedSpeakers";
-import ProgrammeSection from "@/components/ProgrammeSection";
+// import ProgrammeSection from "@/components/ProgrammeSection";
 import SpeakersSection from "@/components/SpeakersSection";
 import Footer from "@/components/Footer";
 
@@ -12,7 +11,6 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <CallForPosters />
-      <FeaturedSpeakers />
       {/* <ProgrammeSection /> */}
       <SpeakersSection />
       <Footer />
