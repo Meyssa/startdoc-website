@@ -7,7 +7,6 @@ const CallForPosters = () => {
   const guidelines = [
     "PhD/Master students can submit",
     "No publication or finished research required — work-in-progress welcome!",
-    "Use the poster template provided",
     "Posters have to be in English or Arabic"
   ];
 

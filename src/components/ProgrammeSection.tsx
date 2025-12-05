@@ -1,71 +1,116 @@
-import { Clock, Calendar, MapPin, Coffee, Presentation, Users2 } from "lucide-react";
+import { Clock, Calendar, MapPin, Coffee, Presentation, Users2, Laptop, Network } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const ProgrammeSection = () => {
-  const programmeItems = [
+  const onlineWorkshops = [
     {
-      time: "09:00 - 09:30",
-      title: "Registration & Welcome Coffee",
-      type: "networking",
-      icon: Coffee,
-      description: "Meet fellow researchers and enjoy refreshments"
+      date: "08/12",
+      title: "What matters in research?",
+      speaker: "Julia Kreutzer",
+      type: "workshop",
+      icon: Laptop,
+      description: "Understanding the key elements that make research impactful"
     },
     {
-      time: "09:30 - 10:30",
-      title: "Opening Keynote",
+      date: "09/12",
+      title: "How to Read/Write a Research Paper",
+      speaker: "Merouane Debbah",
+      type: "workshop",
+      icon: Laptop,
+      description: "Master the art of reading and writing academic papers"
+    },
+    {
+      date: "10/12",
+      title: "The tools and pipeline: how to conduct research efficiently?",
+      speaker: "Mohammed Belgoumri",
+      type: "workshop",
+      icon: Laptop,
+      description: "Learn about essential tools and workflows for efficient research"
+    },
+    {
+      date: "11/12",
+      title: "Let the AI Do the Boring Stuff: GenAI for Researchers",
+      speaker: "Hadjer Benmeziane",
+      type: "workshop",
+      icon: Laptop,
+      description: "Discover how Generative AI can streamline your research workflow"
+    },
+    {
+      date: "12/12",
+      title: "AI-Assisted Coding for the Modern Researcher",
+      speaker: "Meyssa Zouambi",
+      type: "workshop",
+      icon: Laptop,
+      description: "Explore AI tools that can enhance your coding and development process"
+    }
+  ];
+
+  const dDayProgramme = [
+    {
+      time: "09:30 - 09:40",
+      title: "Welcome Message",
+      type: "networking",
+      icon: Users2,
+      description: "Opening remarks and event introduction"
+    },
+    {
+      time: "09:40 - 10:00",
+      title: "First Keynote",
+      speaker: "Dr Amrouche",
       type: "keynote",
       icon: Presentation,
-      description: "Starting Your Research Journey: From Idea to Impact"
+      description: "Keynote presentation by Dr Amrouche"
     },
     {
-      time: "10:30 - 11:00",
+      time: "10:05 - 10:25",
+      title: "Second Keynote",
+      speaker: "Pr Si Mohamed",
+      type: "keynote",
+      icon: Presentation,
+      description: "Keynote presentation by Pr Si Mohamed"
+    },
+    {
+      time: "10:25 - 10:40",
       title: "Coffee Break",
       type: "break",
       icon: Coffee,
       description: "Networking opportunity"
     },
     {
-      time: "11:00 - 12:00",
-      title: "Research Methodology Workshop",
-      type: "workshop",
+      time: "10:40 - 11:15",
+      title: "Panel Discussion",
+      type: "panel",
       icon: Users2,
-      description: "Interactive session on research design and methodology"
+      description: "Interactive panel discussion with experts"
+    },
+    {
+      time: "11:20 - 12:00",
+      title: "Poster Session",
+      type: "posters",
+      icon: Presentation,
+      description: "Research poster presentations (approximately 3 presentations)"
     },
     {
       time: "12:00 - 13:00",
       title: "Lunch Break",
       type: "break",
       icon: Coffee,
-      description: "Lunch and networking"
+      description: "Lunch break (speakers will be provided with lunch)"
     },
     {
-      time: "13:00 - 14:30",
-      title: "Poster Session",
-      type: "posters",
-      icon: Presentation,
-      description: "Present your research and engage with peers"
+      time: "13:00 - 15:00",
+      title: "Networking & Matching Platform",
+      type: "networking",
+      icon: Network,
+      description: "Connect with peers and explore research collaboration opportunities"
     },
     {
-      time: "14:30 - 15:00",
-      title: "Best Poster Awards",
+      time: "15:00",
+      title: "Closing & Best Poster Award",
       type: "awards",
-      icon: Users2,
-      description: "Recognition of outstanding research presentations"
-    },
-    {
-      time: "15:00 - 16:00",
-      title: "Panel Discussion",
-      type: "panel",
-      icon: Users2,
-      description: "Q&A with experienced researchers and PhD supervisors"
-    },
-    {
-      time: "16:00 - 16:30",
-      title: "Closing Remarks",
-      type: "closing",
       icon: Presentation,
-      description: "Wrap-up and next steps"
+      description: "Closing remarks and announcement of the best poster award"
     }
   ];
 
@@ -102,76 +147,125 @@ const ProgrammeSection = () => {
               Programme
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              A full day of learning, networking, and research presentation designed to support your academic journey
+              A week of online workshops followed by a full day of learning, networking, and research presentation designed to support your academic journey
             </p>
-            
-            {/* Event Details */}
-            <div className="flex flex-wrap justify-center gap-6 mt-8">
-              <div className="flex items-center space-x-2 text-muted-foreground">
-                <Calendar className="w-5 h-5 text-primary" />
-                <span className="font-medium">Date: TBD</span>
-              </div>
-              <div className="flex items-center space-x-2 text-muted-foreground">
-                <MapPin className="w-5 h-5 text-primary" />
-                <span className="font-medium">Online + In Person</span>
-              </div>
-              <div className="flex items-center space-x-2 text-muted-foreground">
-                <Clock className="w-5 h-5 text-primary" />
-                <span className="font-medium">09:00 - 16:30</span>
-              </div>
+          </div>
+
+          {/* Online Workshops Section */}
+          <div className="mb-16">
+            <div className="text-center mb-8">
+              <h3 className="font-heading text-3xl font-bold text-foreground mb-4">
+                Online Workshops
+              </h3>
+              <p className="text-muted-foreground">
+                Join us for a series of online workshops from December 8-12, 2025
+              </p>
+            </div>
+            <div className="space-y-4">
+              {onlineWorkshops.map((workshop, index) => (
+                <Card key={index} className="shadow-card hover:shadow-card-hover transition-shadow duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      {/* Date Badge */}
+                      <Badge className="bg-primary/10 text-primary hover:bg-primary/20 font-mono text-sm px-3 py-1">
+                        {workshop.date}
+                      </Badge>
+                      
+                      {/* Icon */}
+                      <div className="w-10 h-10 bg-muted/50 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <workshop.icon className="w-5 h-5 text-muted-foreground" />
+                      </div>
+                      
+                      {/* Content */}
+                      <div className="flex-1">
+                        <div className="flex items-center space-x-3 mb-2">
+                          <h3 className="font-heading text-lg font-semibold text-foreground">
+                            {workshop.title}
+                          </h3>
+                          <Badge className={`text-xs ${getTypeColor(workshop.type)}`}>
+                            {workshop.type}
+                          </Badge>
+                        </div>
+                        <p className="text-muted-foreground text-sm font-medium mb-1">
+                          — {workshop.speaker}
+                        </p>
+                        <p className="text-muted-foreground text-sm">
+                          {workshop.description}
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
 
-          {/* Programme Timeline */}
-          <div className="space-y-4">
-            {programmeItems.map((item, index) => (
-              <Card key={index} className="shadow-card hover:shadow-card-hover transition-shadow duration-300">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4">
-                    {/* Time Badge */}
-                    <Badge className="bg-primary/10 text-primary hover:bg-primary/20 font-mono text-sm px-3 py-1">
-                      {item.time}
-                    </Badge>
-                    
-                    {/* Icon */}
-                    <div className="w-10 h-10 bg-muted/50 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <item.icon className="w-5 h-5 text-muted-foreground" />
-                    </div>
-                    
-                    {/* Content */}
-                    <div className="flex-1">
-                      <div className="flex items-center space-x-3 mb-2">
-                        <h3 className="font-heading text-lg font-semibold text-foreground">
-                          {item.title}
-                        </h3>
-                        <Badge className={`text-xs ${getTypeColor(item.type)}`}>
-                          {item.type}
-                        </Badge>
-                      </div>
-                      <p className="text-muted-foreground text-sm">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          {/* Note */}
-          <Card className="mt-12 bg-gradient-card border-primary/20">
-            <CardContent className="p-6">
-              <div className="text-center">
-                <h3 className="font-heading text-lg font-semibold text-foreground mb-2">
-                  Programme Note
-                </h3>
-                <p className="text-muted-foreground">
-                  This is a preliminary programme. The final schedule will be announced closer to the event date. 
-                  All registered participants will receive detailed information about the programme and logistics.
-                </p>
+          {/* D-Day Section */}
+          <div>
+            <div className="text-center mb-8">
+              <h3 className="font-heading text-3xl font-bold text-foreground mb-4">
+                D-Day: December 13th, 2025
+              </h3>
+              <p className="text-muted-foreground mb-4">
+                Main event day at ESI Algiers, Algeria
+              </p>
+              <div className="flex flex-wrap justify-center gap-6">
+                <div className="flex items-center space-x-2 text-muted-foreground">
+                  <Calendar className="w-5 h-5 text-primary" />
+                  <span className="font-medium">December 13th, 2025</span>
+                </div>
+                <div className="flex items-center space-x-2 text-muted-foreground">
+                  <MapPin className="w-5 h-5 text-primary" />
+                  <span className="font-medium">ESI Algiers, Algeria</span>
+                </div>
+                <div className="flex items-center space-x-2 text-muted-foreground">
+                  <Clock className="w-5 h-5 text-primary" />
+                  <span className="font-medium">09:30 - 15:00</span>
+                </div>
               </div>
-            </CardContent>
-          </Card>
+            </div>
+
+            {/* D-Day Programme Timeline */}
+            <div className="space-y-4">
+              {dDayProgramme.map((item, index) => (
+                <Card key={index} className="shadow-card hover:shadow-card-hover transition-shadow duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-start space-x-4">
+                      {/* Time Badge */}
+                      <Badge className="bg-primary/10 text-primary hover:bg-primary/20 font-mono text-sm px-3 py-1">
+                        {item.time}
+                      </Badge>
+                      
+                      {/* Icon */}
+                      <div className="w-10 h-10 bg-muted/50 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <item.icon className="w-5 h-5 text-muted-foreground" />
+                      </div>
+                      
+                      {/* Content */}
+                      <div className="flex-1">
+                        <div className="flex items-center space-x-3 mb-2">
+                          <h3 className="font-heading text-lg font-semibold text-foreground">
+                            {item.title}
+                          </h3>
+                          <Badge className={`text-xs ${getTypeColor(item.type)}`}>
+                            {item.type}
+                          </Badge>
+                        </div>
+                        {item.speaker && (
+                          <p className="text-muted-foreground text-sm font-medium mb-1">
+                            — {item.speaker}
+                          </p>
+                        )}
+                        <p className="text-muted-foreground text-sm">
+                          {item.description}
+                        </p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
