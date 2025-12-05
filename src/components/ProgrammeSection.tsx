@@ -56,11 +56,11 @@ const ProgrammeSection = () => {
     },
     {
       time: "09:40 - 10:00",
-      title: "First Keynote",
+      title: "Reshaping Geoscience studies with AI",
       speaker: "Dr Amrouche",
       type: "keynote",
       icon: Presentation,
-      description: "Keynote presentation by Dr Amrouche"
+      description: "AI is reshaping geoscience studies by accelerating several manual processes from seismic processing and interpretation, subsurface modeling, remote sensing to planetary exploration. In this presentation, we will discuss some real examples of machine learning role on changing conventional geoscientists daily tasks, with special emphasis on subsurface modeling for hydrocarbon exploration."
     },
     {
       time: "10:05 - 10:25",
