@@ -33,7 +33,20 @@ jobs:
       run: npm run build
       
     - name: Ensure .nojekyll exists
-      run: touch dist/.nojekyll
+      run: |
+        if [ -f public/.nojekyll ]; then
+          cp public/.nojekyll dist/.nojekyll
+        else
+          touch dist/.nojekyll
+        fi
+        ls -la dist/.nojekyll
+    
+    - name: Verify build output
+      run: |
+        echo "Checking dist directory structure:"
+        ls -la dist/
+        echo "Checking for JS files:"
+        find dist/assets -name "*.js" -type f | head -5
       
     - name: Setup Pages
       uses: actions/configure-pages@v4
