@@ -10,15 +10,15 @@ const ProgrammeSection = () => {
       speaker: "Julia Kreutzer",
       type: "workshop",
       icon: Laptop,
-      description: "Understanding the key elements that make research impactful"
+      description: "In this talk I will share some lessons that I learned over the course of my research career, debunking myths of what makes research successful, and normalizing experiences that don't feel like success."
     },
     {
       date: "09/12",
-      title: "How to Read/Write a Research Paper",
+      title: "Career Advice for Researchers",
       speaker: "Merouane Debbah",
       type: "workshop",
       icon: Laptop,
-      description: "Master the art of reading and writing academic papers"
+      description: "In this talk, I will share candid career advice for early-stage researchers, grounded in my experience building research centers, advising companies, and mentoring PhD students across academia and industry. We will look at the practical skills often overlooked in formal education: how to read papers to identify real opportunities, how to write with purpose, and how to structure a CV that speaks to both academic supervisors and hiring managers. The talk will also dive into broader career questions: PhD or industry? Buzzwords or fundamentals? Asking for a job or proposing one?"
     },
     {
       date: "10/12",
@@ -26,7 +26,7 @@ const ProgrammeSection = () => {
       speaker: "Mohammed Belgoumri",
       type: "workshop",
       icon: Laptop,
-      description: "Learn about essential tools and workflows for efficient research"
+      description: "In this workshop, we will have a look at some the most important and useful tools you, as a researcher, have access to conduct your work efficiently and methodically. We cover tools for: Writing scientific documents like your papers and thesis (LaTeX, Overleaf, and Typst). Managing your literature (capturing, downloading, annotating, and exporting) with Zotero. Managing your knowledge and synthesizing it into publishable materials (Obsidian and Logseq). With mastery over all or some of these tools, you can add structure to your research workflow, and remove some of the most significant stress factors all researchers deal with at one point or another."
     },
     {
       date: "11/12",
@@ -34,7 +34,7 @@ const ProgrammeSection = () => {
       speaker: "Hadjer Benmeziane",
       type: "workshop",
       icon: Laptop,
-      description: "Discover how Generative AI can streamline your research workflow"
+      description: "A hands-on workshop where participants learn to use generative AI tools to plan, draft, and refine an academic paper. The session covers idea generation, literature exploration, outlining, writing, editing, and citation support, all guided by practical exercises that lead to producing a complete paper draft."
     },
     {
       date: "12/12",
@@ -42,7 +42,7 @@ const ProgrammeSection = () => {
       speaker: "Meyssa Zouambi",
       type: "workshop",
       icon: Laptop,
-      description: "Explore AI tools that can enhance your coding and development process"
+      description: "As PhD students, your core mission is advancing scientific knowledge, yet practical challenges like dealing with legacy code, debugging tricky errors, and handling routine implementation tasks can slow you down. This session shows how to safely use AI coding assistants to handle the mechanical parts of coding so you can focus on the scientific questions that drive your research."
     }
   ];
 

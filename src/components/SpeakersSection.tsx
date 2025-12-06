@@ -1,4 +1,4 @@
-import { LinkedinIcon, GraduationCap, Award, Users } from "lucide-react";
+import { LinkedinIcon, GraduationCap, Award, Users, User } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import juliaImage from "@/assets/speakers/DSC00536.JPG";
@@ -62,6 +62,22 @@ const SpeakersSection = () => {
       expertise: ["Artificial Intelligence", "Machine Learning", "Google Cloud", "MLOps"],
       bio: "Mohamed Berrimi holds two PhD degrees in Computer Science and Artificial Intelligence and is a Google Developer Expert (GDE) in AI/ML and Google Cloud. He is currently Head of AI at Fyler, where he focuses on building and deploying AI-driven products and solutions.",
       image: berrimiImage
+    },
+    {
+      name: "Mérouane Debbah",
+      title: "Professor, President of the AI Scientific Council",
+      institution: "Algeria",
+      expertise: [
+        "Random Matrix Theory",
+        "Large Language Models",
+        "Distributed AI Systems",
+        "Semantic Communications",
+        "6G Technologies",
+        "Massive MIMO",
+        "Large Intelligent Surfaces"
+      ],
+      bio: "Mérouane Debbah is a researcher, educator and technology entrepreneur. Over his career, he has founded several public and industrial research centers, start-ups and is now Professor at Khalifa University of Science and Technology in Abu Dhabi and founding Director of the KU 6G Research Center. He is a frequent keynote speaker at international events in the field of telecommunication and AI. His research has been lying at the interface of fundamental mathematics, algorithms, statistics, information and communication sciences with a special focus on random matrix theory and learning algorithms. In the Communication field, he has been at the heart of the development of small cells (4G), Massive MIMO (5G) and Large Intelligent Surfaces (6G) technologies. In the AI field, he is known for his work on Large Language Models, distributed AI systems for networks and semantic communications. He received multiple prestigious distinctions, prizes and best paper awards (more than 50 IEEE best paper awards) for his contributions to both fields and according to research.com is ranked as the best scientist in France in the field of Electronics and Electrical Engineering. He is an IEEE Fellow, a WWRF Fellow, a Eurasip Fellow, an AAIA Fellow, an Institut Louis Bachelier Fellow, an AIIA Fellow and a Membre émérite SEE.",
+      image: undefined
     }
   ];
 
@@ -86,16 +102,20 @@ const SpeakersSection = () => {
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-6">
                     {/* Profile Image */}
-                    <div className="w-20 h-20 bg-gradient-accent rounded-full flex-shrink-0 overflow-hidden">
-                      <img 
-                        src={speaker.image} 
-                        alt={speaker.name}
-                        className={`w-full h-full object-cover ${
-                          speaker.name === "Meyssa Zouambi" 
-                            ? "scale-150 object-[center_50%]" 
-                            : ""
-                        }`}
-                      />
+                    <div className="w-20 h-20 bg-gradient-accent rounded-full flex-shrink-0 overflow-hidden flex items-center justify-center">
+                      {speaker.image ? (
+                        <img 
+                          src={speaker.image} 
+                          alt={speaker.name}
+                          className={`w-full h-full object-cover ${
+                            speaker.name === "Meyssa Zouambi" 
+                              ? "scale-150 object-[center_50%]" 
+                              : ""
+                          }`}
+                        />
+                      ) : (
+                        <User className="w-10 h-10 text-muted-foreground" />
+                      )}
                     </div>
                     
                     {/* Info */}
