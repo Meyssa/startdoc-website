@@ -7,9 +7,24 @@ import meyssaImage from "@/assets/speakers/image0.jpg";
 import hadjerImage from "@/assets/speakers/HB.jpg";
 import amroucheImage from "@/assets/speakers/Profile_Amrouche.jpg";
 import berrimiImage from "@/assets/speakers/image (2).png";
+import siMohammedImage from "@/assets/speakers/MSM Photo Conf.jpg";
 
 const SpeakersSection = () => {
   const speakers = [
+    {
+      name: "Malik SI MOHAMMED",
+      title: "Professor in Computer Science",
+      institution: "Mouloud Mammeri University at Tizi-Ouzou (Algeria)",
+      expertise: [
+        "Knowledge Engineering",
+        "Cybersecurity",
+        "Digital Governance",
+        "International Consulting",
+        "Internet Governance"
+      ],
+      bio: "Malik SI MOHAMMED is Professor in Computer Science and earned his Ph.D. from Paul Sabatier University at Toulouse (France), where he worked for several years before joining Mouloud Mammeri University at Tizi-Ouzou (Algeria). He led numerous research projects, particularly focused on Knowledge Engineering, and supervised international academic collaborations. His teaching career included Post-Graduate courses at the Higher School of Computer Science (ESI-Algiers) and USTHB, as well as regular appointments as Visiting Professor at Toulouse Jean Jaurès University (France). Alongside his teaching and research activities, he engaged in strategic digital initiatives, such as cybersecurity, knowledge-based economics, and governance. In this capacity, he served as an Invited Speaker in many countries and worked as an International Consultant-Expert for various national and foreign institutions (UNDP, ADB, etc.). He was also a member of the Arab Advisory Council of the Internet Governance Forum (IGF).",
+      image: siMohammedImage
+    },
     {
       name: "Mohamed Amrouche",
       title: "Keynote Speaker, Senior Geophysicist & Geoscience Team Leader",
