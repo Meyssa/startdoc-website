@@ -49,7 +49,7 @@ const ProgrammeSection = () => {
   const dDayProgramme = [
     {
       time: "09:30 - 09:40",
-      title: "Welcome Message",
+      title: "Welcome Ceremony",
       type: "networking",
       icon: Users2,
       description: "Opening remarks and event introduction"
@@ -57,18 +57,18 @@ const ProgrammeSection = () => {
     {
       time: "09:40 - 10:00",
       title: "Reshaping Geoscience studies with AI",
-      speaker: "Dr Amrouche",
+      speaker: "Mohamed Amrouche - Senior Geologist @ SLB",
       type: "keynote",
       icon: Presentation,
       description: "AI is reshaping geoscience studies by accelerating several manual processes from seismic processing and interpretation, subsurface modeling, remote sensing to planetary exploration. In this presentation, we will discuss some real examples of machine learning role on changing conventional geoscientists daily tasks, with special emphasis on subsurface modeling for hydrocarbon exploration."
     },
     {
       time: "10:05 - 10:25",
-      title: "Second Keynote",
-      speaker: "Pr Si Mohamed",
+      title: "Research Keynote",
+      speaker: "Si Mohamed Malik - Professor in Computer Science",
       type: "keynote",
       icon: Presentation,
-      description: "Keynote presentation by Pr Si Mohamed"
+      description: "Keynote presentation by Si Mohamed Malik"
     },
     {
       time: "10:25 - 10:40",
@@ -78,39 +78,33 @@ const ProgrammeSection = () => {
       description: "Networking opportunity"
     },
     {
-      time: "10:40 - 11:15",
-      title: "Panel Discussion",
-      type: "panel",
-      icon: Users2,
-      description: "Interactive panel discussion with experts"
-    },
-    {
-      time: "11:20 - 12:00",
+      time: "10:40 - 11:30",
       title: "Poster Session",
       type: "posters",
       icon: Presentation,
-      description: "Research poster presentations (approximately 3 presentations)"
+      description: "Research poster presentations"
     },
     {
-      time: "12:00 - 13:00",
-      title: "Lunch Break",
+      time: "11:30 - 12:10",
+      title: "Panel: What I Wish I Knew in My First Year of PhD",
+      speaker: "Dr Mohamed Berrimi • Dr Soumia Goumiri • Dr Naima Boukhiar",
+      type: "panel",
+      icon: Users2,
+      description: "Experiences and advice from early-career researchers"
+    },
+    {
+      time: "12:10 - 13:30",
+      title: "Lunch Break!",
       type: "break",
       icon: Coffee,
-      description: "Lunch break (speakers will be provided with lunch)"
+      description: "Lunch break"
     },
     {
-      time: "13:00 - 15:00",
-      title: "Networking & Matching Platform",
+      time: "Afternoon",
+      title: "Networking Sessions",
       type: "networking",
       icon: Network,
       description: "Connect with peers and explore research collaboration opportunities"
-    },
-    {
-      time: "15:00",
-      title: "Closing & Best Poster Award",
-      type: "awards",
-      icon: Presentation,
-      description: "Closing remarks and announcement of the best poster award"
     }
   ];
 
@@ -220,7 +214,7 @@ const ProgrammeSection = () => {
                 </div>
                 <div className="flex items-center space-x-2 text-muted-foreground">
                   <Clock className="w-5 h-5 text-primary" />
-                  <span className="font-medium">09:30 - 15:00</span>
+                  <span className="font-medium">09:30 - Afternoon</span>
                 </div>
               </div>
             </div>
